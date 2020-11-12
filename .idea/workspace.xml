@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="">
+    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Criando seeder's e model's">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,8 +173,16 @@
       <workItem from="1605013993245" duration="7373000" />
       <workItem from="1605102434962" duration="6411000" />
       <workItem from="1605130403348" duration="1026000" />
-      <workItem from="1605180977950" duration="3539000" />
+      <workItem from="1605180977950" duration="4080000" />
     </task>
+    <task id="LOCAL-00001" summary="Criando seeder's e model's">
+      <created>1605186877845</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605186877846</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +200,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criando seeder's e model's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando seeder's e model's" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605014363527">
       <screen x="0" y="0" width="1366" height="738" />
@@ -203,5 +213,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1605014896545" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1605186881947">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1605186881947" />
   </component>
 </project>
