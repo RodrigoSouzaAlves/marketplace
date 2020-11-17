@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Store extends Model
 {
     protected $table = 'stores';
+    protected $fillable = [
+        'name',
+        'description',
+        'phone',
+        'mobile_phone',
+        'slug',
+    ];
 
     //Mapeamento relacional com o Model User.
     public  function user(){
