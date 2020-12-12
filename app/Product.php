@@ -15,7 +15,7 @@ class Product extends Model
       'slug',
     ];
     public function store(){
-        $this->belongsTo(Store::class);
+        return $this->belongsTo(Store::class);
     }
 
     public function categories(){

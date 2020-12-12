@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Criando migrations e model's">
+    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Criando Seeder e Factory">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Store.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +177,17 @@
       <workItem from="1605102434962" duration="6411000" />
       <workItem from="1605130403348" duration="1026000" />
       <workItem from="1605180977950" duration="6097000" />
-      <workItem from="1605616904169" duration="3755000" />
+      <workItem from="1605616904169" duration="4701000" />
+      <workItem from="1606140484320" duration="1212000" />
+      <workItem from="1606226845779" duration="2419000" />
+      <workItem from="1606314947640" duration="3015000" />
+      <workItem from="1607359457080" duration="81000" />
+      <workItem from="1607359760748" duration="202000" />
+      <workItem from="1607360068867" duration="2825000" />
+      <workItem from="1607452246443" duration="4238000" />
+      <workItem from="1607642472528" duration="1456000" />
+      <workItem from="1607709755591" duration="1160000" />
+      <workItem from="1607782432243" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="Criando seeder's e model's">
       <created>1605186877845</created>
@@ -194,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605187372397</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criando Seeder e Factory">
+      <created>1605620784357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605620784357</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,20 +231,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criando seeder's e model's" />
     <MESSAGE value="Criando migrations e model's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando migrations e model's" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605014363527">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1605014363527" />
-    <state x="184" y="14" key="SettingsEditor" timestamp="1605014896545">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1605014896545" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1605187375476">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1605187375476" />
+    <MESSAGE value="Criando Seeder e Factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando Seeder e Factory" />
   </component>
 </project>
