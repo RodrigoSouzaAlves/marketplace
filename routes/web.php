@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/stores', 'Admin\\StoreController@index');
+Route::prefix('/admin/stores')->namespace('Admin')->group(function(){
+    Route::get('/', 'StoreController@index');
+    Route::get('/create', 'StoreController@create');
+    Route::post('/store', 'StoreController@store');
+});
