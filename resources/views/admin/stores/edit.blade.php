@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Criar Loja</h1>
-    <form action="/admin/stores/update/{{$store->id}}" method="post">
+    <form action="{{route('admin_stores_update', ['id'=>$store->id])}}" method="post">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="form-group">
             <label>Nome Loja</label>
