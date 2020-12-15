@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Iniciando as view's">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/stores/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/stores/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stores/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StoreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,10 +154,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/stores" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lojax\resources\views\admin\stores" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -190,7 +195,7 @@
       <workItem from="1607782432243" duration="6851000" />
       <workItem from="1607881902372" duration="2205000" />
       <workItem from="1607965253362" duration="1109000" />
-      <workItem from="1607989838685" duration="1317000" />
+      <workItem from="1607989838685" duration="3110000" />
     </task>
     <task id="LOCAL-00001" summary="Criando seeder's e model's">
       <created>1605186877845</created>

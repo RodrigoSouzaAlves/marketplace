@@ -21,4 +21,6 @@ Route::prefix('/admin/stores')->namespace('Admin')->group(function(){
     Route::get('/', 'StoreController@index');
     Route::get('/create', 'StoreController@create');
     Route::post('/store', 'StoreController@store');
+    Route::get('{id}/edit', 'StoreController@edit');
+    Route::post('/update/{id}', 'StoreController@update');
 });
