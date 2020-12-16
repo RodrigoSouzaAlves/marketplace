@@ -28,4 +28,6 @@ Route::prefix('admin')->name('admin_')->namespace('Admin')->group(function(){
         Route::get('/destroy/{id}', 'StoreController@destroy')->name('destroy');
     });
 
+    Route::resource('products', 'productController');
+
 });
