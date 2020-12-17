@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Iniciando as view's">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +198,8 @@
       <workItem from="1607965253362" duration="1109000" />
       <workItem from="1607989838685" duration="6494000" />
       <workItem from="1608035969799" duration="5244000" />
-      <workItem from="1608119729674" duration="7838000" />
+      <workItem from="1608119729674" duration="8615000" />
+      <workItem from="1608213640256" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="Criando seeder's e model's">
       <created>1605186877845</created>

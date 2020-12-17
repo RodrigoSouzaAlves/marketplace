@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Criar Produto</h1>
-    <form action="{{route('admin_products.create')}}" method="post">
+    <form action="{{route('admin_products.store')}}" method="post">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="form-group">
             <label>Nome do Produto</label>
@@ -16,7 +16,7 @@
 
         <div class="form-group">
             <label>Conteudo</label>
-            <input type="text" name="body" class="form-control">
+            <textarea name="body" id="" cols="30" rows="10" class="form-control"></textarea>
         </div>
 
         <div class="form-group">
@@ -30,10 +30,10 @@
         </div>
 
         <div class="form-group">
-            <label>Usuário</label>
-            <select name="user" class="form-control">
-                @foreach($users as $user)
-                    <option value="{{$user->id}}">{{$user->name}}</option>
+            <label>Lojas</label>
+            <select name="store" class="form-control">
+                @foreach($stores as $store)
+                    <option value="{{$store->id}}">{{$store->name}}</option>
                 @endforeach
             </select>
         </div>

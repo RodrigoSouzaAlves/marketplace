@@ -1,8 +1,8 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <h1>Criar Produtos</h1>
-    <form action="{{route('admin_products.update', ['id'=>$product->id])}}" method="post">
+    <h1>Atualizar Produtos</h1>
+    <form action="{{route('admin_products.update', ['product'=>$product->id])}}" method="post">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="form-group">
             <label>Nome Produto</label>
@@ -16,7 +16,7 @@
 
         <div class="form-group">
             <label>Conteudo</label>
-            <input type="text" name="body" class="form-control" value="{{$product->body}}">
+            <textarea name="body" id="" cols="30" rows="10" class="form-control"  value="{{$product->body}}"></textarea>
         </div>
 
         <div class="form-group">
