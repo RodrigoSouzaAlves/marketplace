@@ -3,7 +3,8 @@
 @section('content')
     <h1>Atualizar Produtos</h1>
     <form action="{{route('admin_products.update', ['product'=>$product->id])}}" method="post">
-        <input type="hidden" name="_token" value="{{csrf_token()}}">
+        @csrf
+        @method("PUT")
         <div class="form-group">
             <label>Nome Produto</label>
             <input type="text" name="name" class="form-control" value="{{$product->name}}">
@@ -16,7 +17,7 @@
 
         <div class="form-group">
             <label>Conteudo</label>
-            <textarea name="body" id="" cols="30" rows="10" class="form-control"  value="{{$product->body}}"></textarea>
+            <textarea name="body" id="" cols="30" rows="10" class="form-control">{{$product->body}}</textarea>
         </div>
 
         <div class="form-group">

@@ -90,7 +90,7 @@ class productController extends Controller
         $data = $request->all();
         $product = $this->product->find($id);
         $product->update($data);
-        flash('Produto Cadastrado com sucesso!');
+        flash('Produto Atualizado com sucesso!');
 
         return redirect()->route('admin_products.index');
     }
