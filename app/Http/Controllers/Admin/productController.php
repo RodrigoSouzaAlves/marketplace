@@ -103,6 +103,10 @@ class productController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = $this->product::find($id);
+        $data->delete();
+
+        flash('Produto deletado com sucesso');
+        return redirect()->route('admin_products.index');
     }
 }
