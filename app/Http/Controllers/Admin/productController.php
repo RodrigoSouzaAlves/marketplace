@@ -46,7 +46,13 @@ class productController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $store = \App\Store::find($data['store']);
+        $store->products()->create($data);
+
+        flash('Produto Cadastrado com sucesso!');
+
+        return redirect()->route('admin_products.index');
     }
 
     /**
@@ -81,7 +87,12 @@ class productController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $product = $this->product->find($id);
+        $product->update($data);
+        flash('Produto Cadastrado com sucesso!');
+
+        return redirect()->route('admin_products.index');
     }
 
     /**
