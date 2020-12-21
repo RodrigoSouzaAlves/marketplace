@@ -27,7 +27,7 @@ class StoreController extends Controller
         $store = $user->store()->create($data);
 
         flash('Loja Criada com sucesso!!')->success();
-        return redirect()->route('admin_stores_index');
+        return redirect()->route('admin_stores.index');
     }
 
     public function edit($id){
@@ -43,7 +43,7 @@ class StoreController extends Controller
         $store->update($data);
 
         flash('Loja Alterada com sucesso!!')->success();
-        return redirect()->route('admin_stores_index');
+        return redirect()->route('admin_stores.index');
     }
 
     public function destroy($id){
@@ -51,6 +51,6 @@ class StoreController extends Controller
         $store->delete();
 
         flash('Loja Excluida com sucesso!!')->success();
-        return redirect()->route('admin_stores_index');
+        return redirect()->route('admin_stores.index');
     }
 }

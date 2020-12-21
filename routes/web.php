@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::prefix('admin')->name('admin_')->namespace('Admin')->group(function(){
-    Route::prefix('stores')->name('stores_')->group(function (){
+   /* Route::prefix('stores')->name('stores_')->group(function (){
 
         Route::get('/', 'StoreController@index')->name('index');
         Route::get('/create', 'StoreController@create')->name('create');
@@ -26,8 +26,8 @@ Route::prefix('admin')->name('admin_')->namespace('Admin')->group(function(){
         Route::get('{id}/edit', 'StoreController@edit')->name('edit');
         Route::post('/update/{id}', 'StoreController@update')->name('update');
         Route::get('/destroy/{id}', 'StoreController@destroy')->name('destroy');
-    });
-
-    Route::resource('products', 'productController');
+    });*/
+    Route::resource('stores', 'StoreController');
+    Route::resource('products', 'ProductController');
 
 });

@@ -1,13 +1,14 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <a href="{{route('admin_products.create')}}" class="btn btn-success">Criar Produto</a>
+    <a href="{{route('admin_produc .ts.create')}}" class="btn btn-success">Criar Produto</a>
     <table class="table table-striped">
         <thead>
         <tr>
             <th>#</th>
             <th>Nome do produto</th>
             <th>Preço</th>
+            <th>Loja</th>
             <th>Ações</th>
         </tr>
         </thead>
@@ -16,7 +17,8 @@
             <tr>
                 <td>{{$product->id}}</td>
                 <td>{{$product->name}}</td>
-                <td>{{number_format($product->price, 2, ',', '.')}}</td>
+                <td>R$ {{number_format($product->price, 2, ',', '.')}}</td>
+                <td>{{$product->store->name}}</td>
                 <td>
                     <div class="btn-group">
                         <a href="{{route('admin_products.edit', ['product'=> $product->id])}}" class="btn btn-sm btn-dedfult">Editar</a>
