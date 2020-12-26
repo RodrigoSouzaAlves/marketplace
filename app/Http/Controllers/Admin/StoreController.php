@@ -22,8 +22,7 @@ class StoreController extends Controller
 
     public function store(Request $request){
         $data = $request->all(0);
-
-        $user = \App\User::find($data['user']);
+        $user = auth()->user();
         $store = $user->store()->create($data);
 
         flash('Loja Criada com sucesso!!')->success();
