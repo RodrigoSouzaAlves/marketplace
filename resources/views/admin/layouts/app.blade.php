@@ -16,6 +16,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            @auth
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item @if(request()->is('admin/stores')) active @endif">
                     <a class="nav-link" href="{{route('admin_stores.index')}}">Lojas <span class="sr-only">(current)</span></a>
@@ -35,6 +36,7 @@
                 </ul>
             </div>
         </div>
+        @endauth
     </nav>
     <div class="container">
         @include('flash::message')
