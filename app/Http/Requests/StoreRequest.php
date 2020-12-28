@@ -25,9 +25,16 @@ class StoreRequest extends FormRequest
     {
         return [
             'name'=>'required',
-            'description'=>'required',
+            'description'=>'required | min:10',
             'phone'=>'required',
             'mobile_phone'=>'required',
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'min' => 'O campo deve ter no mínimo :min caracteres!',
+            'required' => 'O campo é obrigatorio!'
         ];
     }
 }
