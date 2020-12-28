@@ -25,9 +25,9 @@ class StoreRequest extends FormRequest
     {
         return [
             'name'=>'required',
-            'description'=>'',
-            'phone'=>'',
-            'mobile_phone'=>'',
+            'description'=>'required',
+            'phone'=>'required',
+            'mobile_phone'=>'required',
         ];
     }
 }

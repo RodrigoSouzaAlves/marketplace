@@ -6,29 +6,50 @@
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="form-group">
             <label>Nome Loja</label>
-            <input type="text" name="name" class="form-control">
+            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror">
+
+            @error('name')
+                <div class="invalid-feedback">
+                    <span>O nome é obrigatorio!</span>
+                </div>
+            @enderror
         </div>
 
         <div class="form-group">
             <label>Descrição</label>
-            <input type="text" name="description" class="form-control">
+            <input type="text" name="description" class="form-control @error('description') is-invalid @enderror">
+            @error('description')
+                <div class="invalid-feedback">
+                    <span>A descrição é obrigatoria!</span>
+                </div>
+            @enderror
         </div>
 
         <div class="form-group">
             <label>Telefone</label>
-            <input type="text" name="phone" class="form-control">
+            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror">
+            @error('phone')
+                <div class="invalid-feedback">
+                    <span>O Telefone é obrigatorio!</span>
+                </div>
+            @enderror
         </div>
 
         <div class="form-group">
             <label>Celular</label>
-            <input type="text" name="mobile_phone" class="form-control">
+            <input type="text" name="mobile_phone" class="form-control @error('mobile_phone') is-invalid @enderror">
+            @error('mobile_phone')
+                <div class="invalid-feedback">
+                    <span>O celular é obrigatorio!</span>
+                </div>
+            @enderror
         </div>
 
         <div class="form-group">
             <label>Slug</label>
             <input type="text" name="slug" class="form-control">
         </div>
-        
+
         <div>
             <button type="submit" class="btn btn-lg btn-success">Criar Loja</button>
         </div>
