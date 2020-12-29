@@ -8,9 +8,9 @@ use App\Http\Requests\StoreRequest;
 class StoreController extends Controller
 {
     public function index(){
-        $stores = \App\Store::paginate(10);
+        $store = auth()->user()->store;
 
-        return view('admin.stores.index', compact('stores'));
+        return view('admin.stores.index', compact('store'));
     }
 
     public function create(){

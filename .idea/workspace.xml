@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Alterando as mensagens de validação">
+    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Adicionando a recuperação de dados quando ouver algum dado inserido errado no cadrastro de produto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StoreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +213,7 @@
       <workItem from="1608741994524" duration="4819000" />
       <workItem from="1609008961090" duration="4127000" />
       <workItem from="1609164702991" duration="7951000" />
-      <workItem from="1609268263693" duration="2944000" />
+      <workItem from="1609268263693" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="Criando seeder's e model's">
       <created>1605186877845</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609183047846</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adicionando a recuperação de dados quando ouver algum dado inserido errado no cadrastro de produto">
+      <created>1609271287455</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609271287455</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +281,7 @@
     <MESSAGE value="Criando Seeder e Factory" />
     <MESSAGE value="Iniciando as view's" />
     <MESSAGE value="Alterando as mensagens de validação" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterando as mensagens de validação" />
+    <MESSAGE value="Adicionando a recuperação de dados quando ouver algum dado inserido errado no cadrastro de produto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando a recuperação de dados quando ouver algum dado inserido errado no cadrastro de produto" />
   </component>
 </project>
