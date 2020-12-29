@@ -30,4 +30,17 @@ class ProductRequest extends FormRequest
             'price' => 'required',
         ];
     }
+
+    /**
+     * Get custom messages for validator errors.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'required' => 'O campo é obrigatorio!',
+            'min' => 'O campo deve ter no mínimo :min caracteres',
+        ];
+    }
 }
