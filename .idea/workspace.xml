@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Iniciando as view's">
+    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Alterando as mensagens de validação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/stores/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stores/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +213,8 @@
       <workItem from="1608665353240" duration="658000" />
       <workItem from="1608741994524" duration="4819000" />
       <workItem from="1609008961090" duration="4127000" />
-      <workItem from="1609164702991" duration="7295000" />
+      <workItem from="1609164702991" duration="7951000" />
+      <workItem from="1609268263693" duration="1814000" />
     </task>
     <task id="LOCAL-00001" summary="Criando seeder's e model's">
       <created>1605186877845</created>
@@ -242,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607881965710</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Alterando as mensagens de validação">
+      <created>1609183047846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609183047846</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +274,7 @@
     <MESSAGE value="Criando migrations e model's" />
     <MESSAGE value="Criando Seeder e Factory" />
     <MESSAGE value="Iniciando as view's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iniciando as view's" />
+    <MESSAGE value="Alterando as mensagens de validação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterando as mensagens de validação" />
   </component>
 </project>
