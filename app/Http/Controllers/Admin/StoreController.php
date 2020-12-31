@@ -7,6 +7,11 @@ use App\Http\Requests\StoreRequest;
 
 class StoreController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('user.has.store')->only(['create','store']);
+    }
+
     public function index(){
         $store = auth()->user()->store;
 
