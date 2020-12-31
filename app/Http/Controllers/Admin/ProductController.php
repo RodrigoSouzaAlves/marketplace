@@ -47,11 +47,10 @@ class productController extends Controller
     public function store(ProductRequest $request)
     {
         $data = $request->all();
-        $store = \App\Store::find($data['store']);
+        $store = auth()->user()->store;
         $store->products()->create($data);
 
         flash('Produto Cadastrado com sucesso!');
-
         return redirect()->route('admin_products.index');
     }
 
