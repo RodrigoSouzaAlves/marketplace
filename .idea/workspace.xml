@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="Criando o primeiro middleware">
+    <list default="true" id="204e8fd6-a928-493e-bdc8-a40b95207644" name="Default Changelist" comment="criar produto para loja do usuario logado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +213,8 @@
       <workItem from="1609164702991" duration="7951000" />
       <workItem from="1609268263693" duration="4396000" />
       <workItem from="1609272781744" duration="108000" />
-      <workItem from="1609373066907" duration="1040000" />
+      <workItem from="1609373066907" duration="1201000" />
+      <workItem from="1609764501780" duration="1575000" />
     </task>
     <task id="LOCAL-00001" summary="Criando seeder's e model's">
       <created>1605186877845</created>
@@ -273,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609373681372</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="criar produto para loja do usuario logado">
+      <created>1609374215507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609374215508</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +306,7 @@
     <MESSAGE value="Adicionando a recuperação de dados quando ouver algum dado inserido errado no cadrastro de produto" />
     <MESSAGE value="Correção para listar somente loja vinculada ao usuario logado" />
     <MESSAGE value="Criando o primeiro middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando o primeiro middleware" />
+    <MESSAGE value="criar produto para loja do usuario logado" />
+    <option name="LAST_COMMIT_MESSAGE" value="criar produto para loja do usuario logado" />
   </component>
 </project>
