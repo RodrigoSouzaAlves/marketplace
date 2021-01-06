@@ -20,7 +20,14 @@
                 <td>{{$category->description}}</td>
                 <td>{{$category->slug}}</td>
                 <td>
-
+                    <div class="btn-group">
+                        <a href="{{route('admin_categories.edit', ['category'=> $category->id])}}" class="btn btn-sm btn-dedfult">Editar</a>
+                        <form action="{{route('admin_categories.destroy', ['category'=> $category->id])}}" method="post">
+                            @csrf
+                            @method("DELETE")
+                            <button  type="submit" class="btn btn-sm btn-danger">Remover</button>
+                        </form>
+                    </div>
                 </td>
             </tr>
         @endforeach
