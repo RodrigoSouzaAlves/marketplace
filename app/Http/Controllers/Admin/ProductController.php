@@ -33,9 +33,9 @@ class productController extends Controller
      */
     public function create()
     {
-        $stores = \App\Store::all(['id','name']);
+        $categories = \App\Category::all(['id','name']);
 
-        return view('admin.products.create', compact('stores'));
+        return view('admin.products.create', compact('categories'));
     }
 
     /**
@@ -48,7 +48,8 @@ class productController extends Controller
     {
         $data = $request->all();
         $store = auth()->user()->store;
-        $store->products()->create($data);
+        $product = $store->products()->create($data);
+        $product->categories()->sync($data['categories']);
 
         flash('Produto Cadastrado com sucesso!');
         return redirect()->route('admin_products.index');

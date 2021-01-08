@@ -20,6 +20,6 @@ class Product extends Model
 
     public function categories(){
         //Relacionamento relacional N : N
-        return $this->belongsToMany(Category::class, 'categories_products');
+        return $this->belongsToMany(Category::class, 'category_product');
     }
 }
