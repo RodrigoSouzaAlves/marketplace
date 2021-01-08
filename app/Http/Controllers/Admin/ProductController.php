@@ -75,7 +75,8 @@ class productController extends Controller
     public function edit($id)
     {
         $product = $this->product->find($id);
-        return view('admin.products.edit', compact('product'));
+        $categories = \App\Category::all(['id','name']);
+        return view('admin.products.edit', compact('product', 'categories'));
     }
 
     /**
