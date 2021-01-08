@@ -7,6 +7,7 @@
         <tr>
             <th>#</th>
             <th>Nome do produto</th>
+            <th>Categoria</th>
             <th>Preço</th>
             <th>Loja</th>
             <th>Ações</th>
@@ -17,6 +18,10 @@
             <tr>
                 <td>{{$product->id}}</td>
                 <td>{{$product->name}}</td>
+                <td>@foreach($product->categories as $teste)
+                        <span class="badge badge-info">{{$teste->name}}</span>
+                    @endforeach
+                </td>
                 <td>R$ {{number_format($product->price, 2, ',', '.')}}</td>
                 <td>{{$product->store->name}}</td>
                 <td>
@@ -29,6 +34,7 @@
                         </form>
                     </div>
                 </td>
+
             </tr>
         @endforeach
         </tbody>
