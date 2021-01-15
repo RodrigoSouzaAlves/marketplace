@@ -47,6 +47,12 @@ class productController extends Controller
      */
     public function store(ProductRequest $request)
     {
+        $images = $request->file('photos');
+
+        foreach ($images as $image){
+            $image->store('products', 'public');
+        }
+        dd('Ok Upload');
         $data = $request->all();
         $store = auth()->user()->store;
         $product = $store->products()->create($data);
