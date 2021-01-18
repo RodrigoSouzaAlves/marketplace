@@ -22,4 +22,8 @@ class Product extends Model
         //Relacionamento relacional N : N
         return $this->belongsToMany(Category::class, 'category_product');
     }
+
+    public function photos(){
+        return $this->hasMany(ProductPhoto::class);
+    }
 }

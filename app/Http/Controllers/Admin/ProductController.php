@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Product;
 use App\Http\Requests\ProductRequest;
+use Illuminate\Http\Request;
+
 
 class productController extends Controller
 {
@@ -47,16 +49,16 @@ class productController extends Controller
      */
     public function store(ProductRequest $request)
     {
-        $images = $request->file('photos');
-
-        foreach ($images as $image){
-            $image->store('products', 'public');
-        }
-        dd('Ok Upload');
         $data = $request->all();
         $store = auth()->user()->store;
         $product = $store->products()->create($data);
         $product->categories()->sync($data['categories']);
+
+        if($request->hasFile('photos')){//Verifica se tem imagens no request
+            $photos = $this->photoUpload($request,'image'); //Prepara o array para salvar na tabela
+
+            $product->photos()->createMany($photos);// Salva o caminho da imagem no banco
+        }
 
         flash('Produto Cadastrado com sucesso!');
         return redirect()->route('admin_products.index');
@@ -118,5 +120,18 @@ class productController extends Controller
 
         flash('Produto deletado com sucesso');
         return redirect()->route('admin_products.index');
+    }
+
+    private function photoUpload(Request $request, $imageColumn)
+    {
+        $photos = $request->file('photos');
+
+        $uploadPhotos = [];
+
+        foreach($photos as $photo){//Pecorre o array para criar um novo com o endereço da pasta de destino.
+            $uploadPhotos[] = [$imageColumn => $photo->store('products', 'public')];
+        }
+
+        return $uploadPhotos;
     }
 }
