@@ -13,6 +13,7 @@ class Product extends Model
       'body',
       'price',
       'slug',
+
     ];
     public function store(){
         return $this->belongsTo(Store::class);
