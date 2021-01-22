@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreRequest;
 use App\Traits\Uploadtrait;
+use Illuminate\Support\Facades\Storage;
 
 class StoreController extends Controller
 {
@@ -49,10 +50,19 @@ class StoreController extends Controller
 
     public function update(StoreRequest $request, $id){
         $data = $request->all();
-
         $store = \App\Store::find($id);
-        $store->update($data);
 
+        if($request->hasFile('logo'))
+        {
+            if(Storage::disk('public')->exists($store->logo))
+            {
+                Storage::disk('public')->delete($store->logo);
+            }
+
+            $data['logo'] = $this->photoUpload($request->file('logo'));
+        }
+
+        $store->update($data);
         flash('Loja Alterada com sucesso!!')->success();
         return redirect()->route('admin_stores.index');
     }

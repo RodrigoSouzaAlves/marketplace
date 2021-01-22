@@ -26,6 +26,7 @@
         </div>
 
         <div class="from-group">
+            <img src="{{asset('storage/'.$store->logo)}}" alt="" class="img-fluid">
             <label>Foto da Loja</label>
             <input type="file" name="logo" class="form-control">
         </div>
