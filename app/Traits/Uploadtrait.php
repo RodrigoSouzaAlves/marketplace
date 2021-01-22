@@ -3,8 +3,6 @@
 
 namespace App\Traits;
 
-use Illuminate\Http\Request;
-
 trait Uploadtrait
 {
     private function photoUpload($photos, $imageColumn = null)

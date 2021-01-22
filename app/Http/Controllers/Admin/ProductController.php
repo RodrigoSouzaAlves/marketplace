@@ -6,10 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Product;
 use App\Http\Requests\ProductRequest;
 use Illuminate\Http\Request;
+use App\Traits\Uploadtrait;
 
 
 class productController extends Controller
 {
+    use Uploadtrait;
     private $product;
 
     public function __construct(Product $product)
@@ -55,7 +57,7 @@ class productController extends Controller
         $product->categories()->sync($data['categories']);
 
         if($request->hasFile('photos')){//Verifica se tem imagens no request
-            $photos = $this->photoUpload($request,'image'); //Prepara o array para salvar na tabela
+            $photos = $this->photoUpload($request->file('photos'),'image'); //Prepara o array para salvar na tabela
 
             $product->photos()->createMany($photos);// Salva o caminho da imagem no banco
         }
@@ -103,7 +105,7 @@ class productController extends Controller
         $product->categories()->sync($data['categories']);
 
         if($request->hasFile('photos')){//Verifica se tem imagens no request
-            $photos = $this->photoUpload($request,'image'); //Prepara o array para salvar na tabela
+            $photos = $this->photoUpload($request->file('photos'),'image'); //Prepara o array para salvar na tabela
 
             $product->photos()->createMany($photos);// Salva o caminho da imagem no banco
         }
