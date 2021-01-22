@@ -7,19 +7,17 @@ use Illuminate\Http\Request;
 
 trait Uploadtrait
 {
-    private function photoUpload(Request $request, $imageColumn = null)
+    private function photoUpload($photos, $imageColumn = null)
     {
-        $photos = $request->file('photos');
-
         $uploadPhotos = [];
 
-        foreach($photos as $photo){//Pecorre o array para criar um novo com o endereço da pasta de destino.
-           if(!is_null($imageColumn))
-           {
-               $uploadPhotos[] = [$imageColumn => $photo->store('products', 'public')];
-           }else{
-               $uploadPhotos = $photo;
-           }
+        if(is_array($photos))
+        {
+            foreach ($photos as $photo) {//Pecorre o array para criar um novo com o endereço da pasta de destino.
+                $uploadPhotos[] = [$imageColumn => $photo->store('products', 'public')];
+            }
+        }else{
+            $uploadPhotos = $photos->store('logo', 'public');
         }
 
         return $uploadPhotos;

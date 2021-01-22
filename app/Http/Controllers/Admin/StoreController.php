@@ -12,7 +12,7 @@ class StoreController extends Controller
 
     public function __construct()
     {
-        $this->middleware('user.has.store')->only(['create','store']);
+        //$this->middleware('user.has.store')->only(['create','store']);
     }
 
     public function index(){
@@ -33,7 +33,7 @@ class StoreController extends Controller
 
         if($request->hasFile('logo'))
         {
-            $data['logo'] = $this->photoUpload($request);
+            $data['logo'] = $this->photoUpload($request->file('logo'));
         }
         $store = $user->store()->create($data);
 

@@ -14,7 +14,7 @@ class AlterTableStoresAddCollumnLogo extends Migration
     public function up()
     {
         Schema::table('stores', function (Blueprint $table){
-            $table->string('log')->nullable();
+            $table->string('logo')->nullable();
         });
     }
 
