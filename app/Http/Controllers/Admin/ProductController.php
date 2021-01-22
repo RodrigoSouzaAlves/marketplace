@@ -128,16 +128,4 @@ class productController extends Controller
         return redirect()->route('admin_products.index');
     }
 
-    private function photoUpload(Request $request, $imageColumn)
-    {
-        $photos = $request->file('photos');
-
-        $uploadPhotos = [];
-
-        foreach($photos as $photo){//Pecorre o array para criar um novo com o endereço da pasta de destino.
-            $uploadPhotos[] = [$imageColumn => $photo->store('products', 'public')];
-        }
-
-        return $uploadPhotos;
-    }
 }

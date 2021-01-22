@@ -13,6 +13,7 @@ class Store extends Model
         'phone',
         'mobile_phone',
         'slug',
+        'logo'
     ];
 
     //Mapeamento relacional com o Model User.

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Criar Loja</h1>
-    <form action="{{route('admin_stores.update', ['store'=>$store->id])}}" method="post">
+    <form action="{{route('admin_stores.update', ['store'=>$store->id])}}" method="post" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         @method("PUT")
         <div class="form-group">
@@ -23,6 +23,11 @@
         <div class="form-group">
             <label>Celular</label>
             <input type="text" name="mobile_phone" class="form-control" value="{{$store->mobile_phone}}">
+        </div>
+
+        <div class="from-group">
+            <label>Foto da Loja</label>
+            <input type="file" name="logo" class="form-control">
         </div>
 
         <div class="form-group">
